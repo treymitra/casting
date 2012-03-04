@@ -1,0 +1,152 @@
+* {
+ 
+}
+/*
+@font-face {
+font-family: Acher;
+src: url("fonts/Archer-Semibold-Pro_0.otf") format("opentype");
+}*/
+
+body {
+  background-image: url(images/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom; 
+  /*background-size: fit; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+background-attachment: fixed;
+background-origin: initial;
+background-clip: initial;
+background-color: black;
+	background-color: black;
+ /* font-family: Roman;*/
+font-family: 'Rokkitt', serif;
+color: #4a4a4a;
+  }
+
+input{
+    font-size: 12pt;
+    color: #5e5e5e;
+}
+
+#container {
+
+  margin: auto;
+  width: 1250px;
+}
+
+#top {
+
+  font-size: 40px;
+
+margin-top:130px;
+
+margin-left:460px;
+margin-right:50px;
+ font-family: 'Lobster', cursive;
+ color:#3e3e3e;
+ text-shadow: #8e8e8e 1px 1px;
+
+
+}
+
+#p2 {
+ font-family: 'Lobster', cursive;
+
+color: #3e3e3e;
+    font-size: 18pt;
+
+
+
+}
+
+#welcome {
+    font-size: 12pt;
+
+
+margin-top:0px;
+
+margin-left:460px;
+margin-right:50px;
+
+
+}
+
+#content {
+    font-size: 12pt;
+margin-top:40px;
+
+
+
+margin-left:460px;
+margin-right:50px;
+}
+
+#content2 {
+    font-size: 12pt;
+margin-top:180px;
+
+
+
+margin-left:460px;
+margin-right:50px;
+
+
+}
+
+#footer {
+    font-size: 12pt;
+
+margin-top:30px;
+
+margin-left:460px;
+margin-right:50px;
+
+}
+
+#footerfail {
+    font-size: 12pt;
+
+margin-top:165px;
+
+margin-left:460px;
+margin-right:50px;
+}
+#footeryes {
+    font-size: 12pt;
+
+margin-top:140px;
+
+margin-left:460px;
+margin-right:50px;
+}
+
+
+a.req {
+
+color:#54AAA1;
+}
+
+p.warn {
+
+    font-size: 22pt;
+    color:red;
+     margin-right:20px;
+}
+.image {
+	position:relative;
+	float:left; /* optional
+	 vertical-align: left; */
+   	
+
+   	
+}
+.image .text {
+	position:absolute;
+	bottom:20px; /* in conjunction with left property, decides the text position */
+	right:0px;
+	width:850px; /* optional, though better have one */
+
+}

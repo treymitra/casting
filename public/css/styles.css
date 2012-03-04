@@ -1,0 +1,127 @@
+* {
+ 
+}
+/*
+@font-face {
+font-family: Acher;
+src: url("fonts/Archer-Semibold-Pro_0.otf") format("opentype");
+}*/
+
+body {
+  background-image: url(images/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: top center; 
+  /*background-size: auto;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;  
+    background-color: black;
+  font-family: Roman;
+  font-size: 14px;}
+
+input{
+    font-size: 12pt;
+}
+
+#container {
+
+  margin: auto;
+  width: 850px;
+}
+
+#top {
+
+  font-size: 40px;
+
+margin-top:130px;
+
+margin-left:460px;
+margin-right:50px;
+
+
+}
+
+#welcome {
+    font-size: 12pt;
+
+
+margin-top:0px;
+
+margin-left:460px;
+margin-right:50px;
+
+
+}
+
+#content {
+    font-size: 12pt;
+margin-top:40px;
+
+
+
+margin-left:460px;
+margin-right:50px;
+}
+
+#content2 {
+    font-size: 12pt;
+margin-top:180px;
+
+
+
+margin-left:460px;
+margin-right:50px;
+
+
+}
+
+#footer {
+    font-size: 12pt;
+
+margin-top:30px;
+
+margin-left:460px;
+margin-right:50px;
+
+}
+
+#footerfail {
+    font-size: 12pt;
+
+margin-top:165px;
+
+margin-left:460px;
+margin-right:50px;
+}
+#footeryes {
+    font-size: 12pt;
+
+margin-top:140px;
+
+margin-left:460px;
+margin-right:50px;
+}
+
+
+a.req {
+
+color:#54AAA1;
+}
+
+p.warn {
+
+    font-size: 22pt;
+    color:red;
+     margin-right:20px;
+}
+.image {
+	position:relative;
+	float:right; /* optional */
+}
+.image .text {
+	position:absolute;
+	bottom:20px; /* in conjunction with left property, decides the text position */
+	right:0px;
+	width:850px; /* optional, though better have one */
+}

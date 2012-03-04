@@ -1,241 +1,148 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
-
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
+<head>
+<!--<meta http-equiv="REFRESH" content="0;url=http://signup.parkplease.com">-->
+<title>Welcome to CastingSF.com</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="icon" 
+      type="image/png" 
+      href="images/gobutton.png">
+<link href='http://fonts.googleapis.com/css?family=Lobster|Rokkitt' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+function setTable(what, what2){
+if(document.getElementById(what).style.display=="none"){
+document.getElementById(what).style.display="block";
+}
+else if(document.getElementById(what).style.display=="block"){
+document.getElementById(what).style.display="none";
+}
+if(document.getElementById(what2).style.display=="none"){
+document.getElementById(what2).style.display="block";
+}
+else if(document.getElementById(what2).style.display=="block"){
+document.getElementById(what2).style.display="none";
+}
+}
 
 
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
+function buttonhover(){
 
+}
+function buttonclick(){
+document.getElementById("image").src=""images/gobutton-click.png"";
+}
+</script>
 
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
+</head>
+<body>
+<!--CONTAINER STARTS-->
+<div id="container">
+<div class="image">
+  <img alt="" src="images/signup.png" />
+  <div class="text">
+  <!--HEADER/NAVIGATION STARTS-->
+  <div id="top">
+	<p></p>
+  </div>
+  <!--HEADER/NAVIGATION ENDS-->
+  <!--WELCOME AREA STARTS-->
+  <div id="welcome">
+  
+<p id="p1">Do you love casting porn?</p>
 
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
+<p id="p1">Are you sick of crappy porn that promises everything you want
+but only delivers half the time.</p>
 
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
+<p id="p1">CastingSF.com is detacated to getting its members the best real castings. <p>
+<p id="p2"> Interested? Get an invite!</p>
+</div>
+  <!--WELCOME AREA ENDS-->
+  <!--SIDEBAR STARTS-->
+  <div id="sidebar">
 
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
+  </div>
+  <!--SIDEBAR ENDS-->
+  <!--CONTENT STARTS-->
+  <div id="content">
+	<form name="reg" action="put.php" method="post">
+	<table>
+	<tr>
+	<td>
+	<label for="email" class="text-input">E-mail:<a class="req">*</a></label><br>
+	<input class="validate[required,custom[email]] text-input" type="text" name="email" id="email" size="15" />
+	</td>
+	<td>
+	<label for="password" class= "text-input">Password:</label><br>
+	<input class="validate[required,length[10,14],custom[telephone]] text-password" type="password" name="password" id="password" size="10" /><br />	
+    </td>
+    </tr>
+    <tr>
+	<td>
+	<label for="fname" class="textinput">First Name:<a class="req">*</a></label><br>
+	<input type="text" name="fname" id="fname" size="15"/>
+	</td>
+	<td>
+	<label for="lname" class="textinput">Last Name:<a class="req">*</a></label><br>
+	<input class= "validate[required] text-input" type="text" name="lname" id="lname" size="15"/><br />
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<input type="checkbox" name="cast" id="cast" value="yes" onClick="setTable('spot_t','spot_t2')"/> I want to be cast!     
+	</td>
+	<td align="right"><a class="req">*required</a>
+	</td>
+	</tr>
+	<tr>
+	<td colspan="2" height="60">
+	<!-- of box is checked then these options avalible -->
+	<table >
+	<tr id="spot_t" style="display:block;">
+	<td >
+	<label for="address" class= "text-input">Bio/Photos link:</label><br>
+	<input class="validate[required,length[10,14],custom[telephone]] text-input" type="text" name="link" id="link" width="50" height="50" />
+    </td>
+    <td >
+    If you dont have a site with your bio/photos please upload them <a href="http://www.mediafire.com">here</a> and give me the link.
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	</td>
+	<td>
+	<input type="image" src="images/gobutton.png" name="image" id="image" onclick="copyText()">	
+	</td>
+	</tr>
+	</table>
 
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+</form>
+  </div>
+  <!--CONTENT ENDS-->
+  <!--FOOTER STARTS-->
+  <div id="footer">
+  <table>
+  <tr>
+  <td width="70">
+<a href="http://www.facebook.com/ParkPlease">
+<img  src="images/facebook.png">
+</a>
+<a href="http://twitter.com/#!/prkplz">
+<img  src="images/twitter.png">
+</a>
+</td>
+<td>
+<p>Like us on facebook for early beta info and to get invited to our launch party!</p>
+</td>
+</tr>
+</table>
+</div>
+  <!--FOOTER ENDS-->
+</div>
+</div>
+</div>
+<!--CONTAINER ENDS-->
+</body>
 </html>
